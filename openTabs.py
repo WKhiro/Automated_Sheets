@@ -54,7 +54,7 @@ rows = body.find_elements(By.TAG_NAME, "tr")
 
 action = ActionChains(driver)
 tabs = 0
-tabsToBeOpened = 10
+tabsToBeOpened = "INSERT NUMBER OF TABS TO BE OPENED"
 
 # Open only a certain number of tabs
 for row in reversed(rows):
