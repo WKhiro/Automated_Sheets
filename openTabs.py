@@ -182,4 +182,3 @@ for i in range(1, tabs):
     elif key == "l":
         driver.quit()
         break
-    driver.close()
