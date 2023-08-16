@@ -90,7 +90,7 @@ def clickAndWaitForSubmission(xpath):
 def updateSheet(row, applicant, result, reason=None):
     sheet.update_cell(i, 1, applicant)
     sheet.update_cell(i, 2, result)
-    print(i, applicant)
+    print(i, applicant, result)
     if reason != None:
         print(reason)
         sheet.update_cell(i, 3, reason)
@@ -182,11 +182,4 @@ for i in range(1, tabs):
     elif key == "l":
         driver.quit()
         break
-    key = keyboard.read_key()
-    while key != "w":
-        if key == "l":
-            driver.quit()
-            break
-        print("Rechecking for closed window")
-        key = keyboard.read_key()
     driver.close()
